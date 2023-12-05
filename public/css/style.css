@@ -1,10 +1,12 @@
-body {
+ body {
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+} 
 
+
+/* navbar */
 .container {
     flex: 1;
 }
@@ -12,6 +14,8 @@ body {
 .navbar {
     height: 5rem;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 } 
 
 .fa-compass {
@@ -56,6 +60,30 @@ body {
     align-items: space-evenly;
 }
 
+/* navabar collapse */
+
+/* .parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.child1 {
+    width: 100%;
+    order: 2;
+}
+
+.child2 {
+    width: 100%;
+    order: 1;
+}
+
+.child3 {
+    width: 100%;
+    order: 3;
+} */
+
+
+
 /* Cards */
 .listing-card {
     border: none !important;
@@ -95,28 +123,218 @@ body {
     border: none !important;
 }
 
+
 /*Edit Page*/
 .edit-btn {
     background-color: #fe424d !important;
     border: none !important;
 }
 
+/* @media only screen and (max-width:992px) {
+    .show-card {
+
+    }
+   
+} */
+
+
+
+
 /* Show Page */
 .show-img {
-    height: 30vh;
+    width: 60% !important;
+    height: 30vh !important;
+    margin: auto;
 }
 
 .btns {
     display: flex;
+    margin-top: 1rem;
+    align-items: center;
 }
 
-.show-card {
-    padding-left: 0;
-    padding-right: 0;
+
+
+.show-text {
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 1rem;  
 }
+
+.all-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto; /* Center the container */
+}
+
+.all-review {
+    width: 100%; /* Each review takes the full width on small screens */
+    margin-bottom: 10px; /* Add spacing between reviews */
+}
+
+
+
+/* @media only screen and (max-width:800) {
+    .all-reviews {
+        font-size: 20px;
+    }
+}
+ */
+
+
+
+
+
+/* .review {
+    display: flex !important;
+    flex-wrap: wrap !important;
+} */
+
+
+/* .show-title {
+    padding-left: 7.5rem !important;
+   
+    margin: auto !important;
+} */
+
+
+
+
 
 /* Map */
 #map { 
     height: 400px;
     width: 80vh;
  }
+
+ /* Media Queries for Map */
+ @media only screen and (max-width:992px) {
+    #map {
+        height: 300px;
+        width: 60vh;
+    }
+ }
+
+ /* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+    }
+    
+    .search-btn {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .show-img {
+        width: 80% !important;
+    }
+    
+    .show-btn {
+        width: 60px !important;
+    } 
+       
+    #map {
+        height: 250px;
+        width: 50vh;
+    }
+
+    .show-title {
+        padding: 0 !important;
+        font-size: 1rem !important;
+    }
+
+  
+}
+
+    @media only screen and (max-width:500px) {
+        .responsive img {
+            width: 100% ;
+        }
+        .responsive-inp {
+            font-size: 13px !important;
+        }
+        .responsive {
+            width: 100%;
+        } 
+
+        #map {
+            height: 200px;
+            width: 40vh;
+        }
+       
+    } 
+
+    /* @media (max-width: 600px) {
+        .listing-card {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+      } */
+
+      @media (max-width: 600px) {
+        .listing-card {
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+      }
+   
+
+      @media (max-width: 500px) {
+        .listing-card {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+      }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    /* Media Queries for Show.ejs */
+
+
+/* 
+     .navbar-nav .search-inp {
+        order: 1 !important;
+    }
+
+    .navbar-nav .explore { 
+        order: 2 !important;
+    }
+
+    .navbar-nav .new-listings { 
+        order: 3 !important;
+    }
+
+    .navbar-nav .sign-up { 
+        order: 4 !important;
+    }
+
+    .navbar-nav .login { 
+        order: 5 !important;
+    } */
+
+
+
+
+/* @media (max-width:1200px) {
+    .tax-toggle {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px !important;
+    }
+} */
+
+
+ 
+  

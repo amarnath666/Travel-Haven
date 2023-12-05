@@ -1,14 +1,14 @@
 <style>
-  .search-btn {
+    .search-btn {
     background-color: #fe424d;
     color: #fff;
     border-radius: 25px;
     padding: 0 1rem 0 1rem;
   }
 
-  .search-btn :hover {
-    background-color: #fe424d;
-    color: #fff;
+  .search-btn:hover {
+    background-color: #fe424d !important;
+    color: #fff !important;
   }
 
   .search-btn  i {
@@ -21,7 +21,6 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
   }
-
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -30,11 +29,11 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+      <div class="collapse navbar-collapse parent" id="navbarNavAltMarkup">
+        <div class="navbar-nav child1">
           <a class="nav-link" href="/listings">Explore</a>
         </div>
-        <div class="navbar-nav ms-auto">
+        <div class="navbar-nav child2 ms-auto">
           <form class="d-flex" role="search">
             <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations">
             <button class="btn search-btn" type="submit">
@@ -42,7 +41,7 @@
             </button>
           </form>
         </div>
-          <div class="navbar-nav ms-auto">
+          <div class="navbar-nav child3 ms-auto">
             <a class="nav-link" href="/listings/new">Add new Listings</a>
             <% if(!currUser) { %>
             <a class="nav-link"  href="/signup"><b>Sign up</b></a>
